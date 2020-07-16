@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //retorna dados na main
         mSecurityPreferences = SecurityPreferences(this)
         textViewtest.text = mSecurityPreferences.getClientData(ClientConstants.KEY.CLIENT_NAME)
         //mSecurityPreferences.getClientData(ClientConstants.KEY.CLIENT_CPF)

@@ -29,6 +29,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
+        android:textSize="16dp"
         android:hint="Qual é o seu nome?"
         android:inputType="textPersonName"
         android:padding="8dp"
@@ -47,6 +48,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
+        android:textSize="16dp"
         android:hint="Qual é o número do seu CPF?"
         android:inputType="number"
         android:padding="8dp"
@@ -78,5 +80,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+
+
+        android:id="@+id/editTextPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16dp"
+        android:ems="10"
+        android:hint="Qual é o númer do seu telefone?"
+        android:inputType="phone"
+        android:padding="8dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextClientCpf" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

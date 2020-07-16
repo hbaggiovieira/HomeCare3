@@ -4,5 +4,6 @@ class ClientConstants private constructor(){
     object KEY {
         val CLIENT_NAME = "name"
         val CLIENT_CPF = "cpf"
+        val CLIENT_PHONE = "phone"
     }
 }
