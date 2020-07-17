@@ -29,6 +29,7 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
 
         buttonNext1.setOnClickListener(this)
 
+        //EditText Mask
         editTextPhone.addTextChangedListener(Mask.insert(Mask.MaskType.TEL, editTextPhone))
         editTextClientCpf.addTextChangedListener(Mask.insert(Mask.MaskType.CPF, editTextClientCpf))
 
@@ -53,7 +54,7 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
             mSecurityPreferences.storeClientData("cpf", clientCpf)
             mSecurityPreferences.storeClientData("phone", clientPhone)
 
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, PacientFormActivity::class.java)
             startActivity(intent)
 
         } else {

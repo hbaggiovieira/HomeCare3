@@ -6,7 +6,7 @@ import android.widget.EditText;
 
 public abstract class Mask {
     public enum MaskType {
-        CNPJ("##.###.###/####-##"), CPF("###.###.###-##"), CEP("#####-###"), TEL("(##) #########");
+        CNPJ("##.###.###/####-##"), CPF("###.###.###-##"), CEP("#####-###"), TEL("(##) #########"), TIME ("##:##"), DATE ("##/##/####");
 
         String mask;
 
@@ -23,7 +23,8 @@ public abstract class Mask {
     public static String unmask(String s) {
         return s.replaceAll("[.]", "").replaceAll("[-]", "")
                 .replaceAll("[/]", "").replaceAll("[(]", "")
-                .replaceAll("[ ]", "").replaceAll("[)]", "");
+                .replaceAll("[ ]", "").replaceAll("[)]", "")
+                .replaceAll(":", "").replaceAll(":", "");
     }
 
     public static String mask(MaskType type, String s) {
