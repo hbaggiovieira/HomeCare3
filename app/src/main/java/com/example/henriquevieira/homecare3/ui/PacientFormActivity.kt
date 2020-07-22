@@ -32,7 +32,6 @@ class PacientFormActivity : AppCompatActivity(), View.OnClickListener {
 
 
         //EditText Mask
-        editTextCep.addTextChangedListener(Mask.insert(Mask.MaskType.CEP, editTextCep))
         editTextCpfPacient.addTextChangedListener(Mask.insert(Mask.MaskType.CPF, editTextCpfPacient))
 
         val securityPreferences = SecurityPreferences(this)
@@ -50,13 +49,11 @@ class PacientFormActivity : AppCompatActivity(), View.OnClickListener {
     private fun handleSave() {
         val pName: String = editTextNamePacient.text.toString()
         val pCpf: String = editTextCpfPacient.text.toString()
-        val pCep: String = editTextCep.text.toString()
         val pAge: String = editTextAgePacient.text.toString()
 
-        if (pName != "" && pCpf != "" && pCep != "" && pAge != "") {
+        if (pName != "" && pCpf != "" && pAge != "") {
             mSecurityPreferences.storeClientData("pname", pName)
             mSecurityPreferences.storeClientData("pcpf", pCpf)
-            mSecurityPreferences.storeClientData("pcep", pCep)
             mSecurityPreferences.storeClientData("page", pAge)
 
             val i: Intent = Intent(this, MainActivity::class.java)

@@ -8,11 +8,13 @@ class ClientConstants private constructor(){
 
         val PACIENT_NAME = "pname"
         val PACIENT_CPF = "pcpf"
-        val PACIENT_CEP = "pcep"
         val PACIENT_AGE = "page"
 
-        val DATE_SET = "date"
-        val TIME_SET = "time"
-        val TIME_REQ = "timereq"
+        val PACIENT_CEP = "pcep"
+        val PACIENT_RUA = "prua"
+        val PACIENT_NUMERO = "pnumero"
+        val PACIENT_CIDADE = "pcidade"
+        val HORA_INICIO = "timeset"
+        val DURACAO = "duracao"
     }
 }

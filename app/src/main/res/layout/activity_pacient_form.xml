@@ -20,8 +20,10 @@
 
     <TextView
         android:id="@+id/messagePacient"
-        android:layout_width="379dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:gravity="center"
         android:padding="8dp"
         android:text="Por favor, insira os dados do Paciente"
@@ -45,6 +47,7 @@
         android:padding="8dp"
         android:textColor="@color/colorAccent"
         android:textColorHint="@color/colorAccent"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextCpfPacient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +65,8 @@
         android:padding="8dp"
         android:textColor="@color/colorAccent"
         android:textColorHint="@color/colorAccent"
-        app:layout_constraintBottom_toTopOf="@+id/editTextCep"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAgePacient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNamePacient" />
@@ -79,24 +83,8 @@
         android:padding="8dp"
         android:textColor="@color/colorAccent"
         android:textColorHint="@color/colorAccent"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonNext2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCep" />
-
-    <EditText
-        android:id="@+id/editTextCep"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:hint="Insira o CEP do local de atendimento"
-        android:inputType="number"
-        android:padding="8dp"
-        android:textColor="@color/colorAccent"
-        android:textColorHint="@color/colorAccent"
-        app:layout_constraintBottom_toTopOf="@+id/editTextAgePacient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextCpfPacient" />

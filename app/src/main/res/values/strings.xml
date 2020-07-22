@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">HomeCare3</string>
+    <string name="info">Após clicar em confirmar, você será redirecionado para o WhatsApp. Basta enviar a mensagem gerada automaticamente para finalizar o seu agendamento com o (a) atendente. O valor estimado para o seu serviço é de R$ 20,00 por hora contratada.</string>
+
 </resources>
