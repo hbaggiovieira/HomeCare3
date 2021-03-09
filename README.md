@@ -7,12 +7,6 @@ enviando uma mensagem pré-formatada com todos os dados necessários para realiz
 
 /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*
 
-O objetivo deste aplicativo é ser simples e barato,
-porém a versão final pretendida ainda contará com: 
-
--Filtros de CEP e CPF;
--API de pagamento online (eCommerce);
--Banco de Dados para controle de Usuários tipo Cliente e tipo Prestador de Serviços;
--Lista Dinâmica do tipo RecyclerView para apresentação;
+O objetivo deste aplicativo é ser simples, sendo utilizado apenas para praticar alguns dos conhecimentos necessários para o desenvolvimento de um bom app nativo
 
 /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*
